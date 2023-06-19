@@ -1,10 +1,12 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+'use client'
+
+import * as React from 'react'
+import { Box } from '@chakra-ui/react'
 
 export default function Home() {
   return (
-    <div>
+    <Box>
       hi
-    </div>
+    </Box>
   )
 }
