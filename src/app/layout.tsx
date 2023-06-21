@@ -1,12 +1,10 @@
-// app/layout.tsx
-
-'use-client';
-
 import React from 'react';
+import { Metadata } from 'next'
 import { Providers } from './providers';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'caberTek',
+  colorScheme: 'dark',
   description: 'Web Development Solutions',
 }
 
@@ -17,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{ background: "#1A202C" }}>
         <Providers>
           {children}
         </Providers>

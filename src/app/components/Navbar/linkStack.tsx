@@ -1,5 +1,3 @@
-'use client'
-
 import React from "react";
 import Link from "next/link";
 import { Stack, Button } from "@chakra-ui/react";
@@ -15,7 +13,7 @@ const LinkStack = ({ buttons }: { buttons: Array<string> }) => {
       {buttons.map((button, i) => (
         <Button
           as={Link}
-          href={`/${button.toLowerCase()}`} colorScheme="whatsapp"
+          href={`#${button.toLowerCase()}`}
           variant="ghost"
           key={i}>
           {button}

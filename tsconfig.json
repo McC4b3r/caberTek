@@ -31,7 +31,8 @@
   },
   "include": [
     "./src/**/*",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "theme.ts"
   ],
   "exclude": [
     "node_modules"

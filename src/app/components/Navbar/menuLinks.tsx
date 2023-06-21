@@ -1,5 +1,3 @@
-'use client'
-
 import React from "react";
 import {
   Box,
@@ -9,23 +7,23 @@ import LinkStack from "./linkStack";
 
 export const MenuLinks = ({
   isOpen,
-  isDesktop
+  isDesktop,
+  sections
 }: {
   isOpen: boolean,
-  isDesktop: boolean
+  isDesktop: boolean,
+  sections: Array<string>
 }) => {
-  const pages = ['About', 'Projects']
 
   return (
     <Box
-      mt="2"
       flexBasis={{ base: "100%", md: "auto" }}
     >
       {isDesktop ?
-        <LinkStack buttons={pages} />
+        <LinkStack buttons={sections} />
         :
-        <Collapse in={isOpen} animateOpacity>
-          <LinkStack buttons={pages} />
+        <Collapse in={isOpen} animateOpacity={true}>
+          <LinkStack buttons={sections} />
         </Collapse>}
     </Box>
   )
