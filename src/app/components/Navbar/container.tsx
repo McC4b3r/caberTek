@@ -1,12 +1,20 @@
 import React from "react";
 import { Flex } from "@chakra-ui/react";
 
-export const Container = ({ children }: { children: React.ReactNode }) => {
+export const Container = ({
+  children,
+  isFixed,
+}: {
+  children: React.ReactNode,
+  isFixed: boolean,
+}) => {
+
   return (
     <Flex
       as="nav"
+      bgGradient="linear(to-b, #121417, #1a202cd9)"
       align="center"
-      position="sticky"
+      position={isFixed ? 'fixed' : 'sticky'}
       top="0px"
       zIndex='2'
       justify="space-between"

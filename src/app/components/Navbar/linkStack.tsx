@@ -15,6 +15,7 @@ const LinkStack = ({ buttons }: { buttons: Array<string> }) => {
           as={Link}
           href={`#${button.toLowerCase()}`}
           variant="ghost"
+          color="#fecc89"
           key={i}>
           {button}
         </Button>

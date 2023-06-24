@@ -6,15 +6,19 @@ import { MenuLinks } from "./menuLinks";
 import { MenuToggle } from './menuToggle';
 
 const Navbar = ({
-  sections
+  sections,
+  isFixed,
 }: {
   sections: Array<string>
+  isFixed: boolean
 }) => {
   const { isOpen, onToggle } = useDisclosure();
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
 
   return (
-    <Container>
+    <Container
+      isFixed={isFixed}
+    >
       <Logo />
       <Spacer />
       <MenuToggle
