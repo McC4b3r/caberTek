@@ -1,12 +1,10 @@
-// app/layout.tsx
-
-'use-client';
-
 import React from 'react';
+import { Metadata } from 'next'
 import { Providers } from './providers';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'caberTek',
+  colorScheme: 'dark',
   description: 'Web Development Solutions',
 }
 

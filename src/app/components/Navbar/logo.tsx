@@ -1,19 +1,28 @@
-'use client'
-
 import React from "react";
-import { Box, Heading } from "@chakra-ui/react";
-
-const headingFont = { "fontFamily": "IBM Plex Sans" };
+import { Link } from "@chakra-ui/next-js";
+import { Box, Flex, Heading, Image, Spacer, } from "@chakra-ui/react";
 
 export const Logo = () => {
   return (
-    <Box pl="2" pr="2">
+    <Flex
+      as={Link}
+      _hover={{ textDecoration: 'none' }}
+      href="#home"
+      textDecorationLine="none"
+      pl="2"
+      pr="2"
+    >
       <Heading
-        textShadow="#3f3e3e57 3px 3px 3px"
-        sx={headingFont}
-        size="2xl">
+        color="#f30002"
+        size="xl">
         caberTek
       </Heading>
-    </Box>
+      <Image
+        ml={4}
+        boxSize="45px"
+        src="logo_small.svg"
+        alt="small logo"
+      />
+    </Flex>
   )
 };

@@ -1,5 +1,3 @@
-'use client'
-
 import React, { MouseEventHandler } from "react";
 import { Box } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
