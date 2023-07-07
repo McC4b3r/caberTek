@@ -3,9 +3,9 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { Box, Center, Spinner } from '@chakra-ui/react'
 import Navbar from './components/Navbar'
-import { HomeSection } from './sections/homeSection';
+import { HomeSection } from './sections/home';
 import { useWindowScroll } from 'react-use';
-import { AboutSection } from './sections/aboutSection';
+import { AboutSection } from './sections/about';
 import { Services } from './sections/services';
 
 export default function Home() {
