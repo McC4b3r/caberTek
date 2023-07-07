@@ -30,6 +30,9 @@ export const HomeSection = () => {
               mt={4}
             >
               <Heading
+                as={motion.div}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 1 } }}
                 pb={4}
                 size="3xl"
                 color="#00a6a2"
@@ -38,11 +41,17 @@ export const HomeSection = () => {
                 Need help with your web presence?
               </Heading>
               <Image
+                as={motion.img}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 1 } }}
                 my={-8}
                 boxSize="600px"
                 src='caberTek_hero.svg'
                 alt="logo" />
               <Heading
+                as={motion.div}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 1 } }}
                 color="#539c04"
                 size="2xl"
                 py={4}

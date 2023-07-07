@@ -6,9 +6,10 @@ import Navbar from './components/Navbar'
 import { HomeSection } from './sections/homeSection';
 import { useWindowScroll } from 'react-use';
 import { AboutSection } from './sections/aboutSection';
+import { Services } from './sections/services';
 
 export default function Home() {
-  const sectionLinks = ['Home', 'About', 'Projects', 'Contact'];
+  const sectionLinks = ['Home', 'About', 'Services', 'Projects', 'Contact'];
   const [isLoading, setIsLoading] = useState(true);
   const { y } = useWindowScroll();
   const isFixed = y > 1;
@@ -45,6 +46,7 @@ export default function Home() {
       />
       <HomeSection />
       <AboutSection />
+      <Services />
     </Box>
   )
 }
