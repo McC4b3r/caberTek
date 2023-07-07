@@ -6,25 +6,14 @@ import {
   Image,
   Container,
   Heading,
-  Spacer,
-  Flex,
   Box,
   VStack,
   Divider,
-  List,
-  ListItem,
-  ListIcon,
-  HStack,
+  Center,
 } from '@chakra-ui/react';
-import { CheckCircleIcon } from '@chakra-ui/icons';
+
 
 export const HomeSection = () => {
-  const skills = [
-    "Building websites",
-    "Updating existing websites",
-    "App/Webapp development",
-    "Web design",
-  ];
 
   return (
     <Box
@@ -32,90 +21,49 @@ export const HomeSection = () => {
       bgGradient="linear(to-b, #1a202c 0%, #121417 70%)"
     >
       <Container
-        maxW="90%"
+        maxW="85%"
       >
-        <Flex>
-          <Box
-          >
-            <Image
-              px={4}
-              my={-4}
-              boxSize="600px"
-              src='caberTek_hero.svg'
-              alt="logo" />
-          </Box>
-          <Spacer />
-          <Box
-          >
-            <VStack mt={4}>
+        <Box
+        >
+          <Center>
+            <VStack
+              mt={4}
+            >
               <Heading
-                pt={8}
-                size="2xl"
+                as={motion.div}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 1 } }}
+                pb={4}
+                size="3xl"
                 color="#00a6a2"
 
               >
-                Need help with web presence?
+                Need help with your web presence?
               </Heading>
+              <Image
+                as={motion.img}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 1 } }}
+                my={-8}
+                boxSize="600px"
+                src='caberTek_hero.svg'
+                alt="logo" />
               <Heading
-                color="#5fb600"
-                size="lg"
+                as={motion.div}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 1 } }}
+                color="#539c04"
+                size="2xl"
+                py={4}
               >
-                caberTek has you covered.
+                <Heading size="2xl" as="span" color="#f30002">caberTek</Heading> has you covered.
               </Heading>
-              <Divider />
-              <Box
-                maxW="container.sm"
-              >
-              </Box>
-              <HStack>
-                <Box
-                  bg="#223850"
-                  borderRadius="xl"
-                  mt={2}
-                  p={8}
-                >
-                  <Heading
-                    color="#fecc89"
-                    mb={4}
-                  >
-                    For help with:
-                  </Heading>
-                  <List>
-                    {skills.map((skill: string, i: number) => (
-                      <ListItem
-                        key={i}
-                      >
-                        <ListIcon
-                          color="#5fb600"
-                          as={CheckCircleIcon}
-                        />
-                        {skill}
-                      </ListItem>
-                    ))}
-                  </List>
-                  <Box>
-                    ...and more!
-                  </Box>
-                </Box>
-                <Spacer />
-                <Box>
-                  <Image
-                    px={4}
-                    my={-4}
-                    boxSize="400px"
-                    src='me.svg'
-                    alt="logo" />
-                </Box>
-              </HStack>
-              {/* <Container
-              px={12}
-              mb={2}
-            >
-              Building a business is a lot of work. Let caberTek take some of that off your plate.
-            </Container> */}
+              <Divider
+                my={8}
+              />
             </VStack>
-          </Box>
-        </Flex>
+          </Center>
+        </Box>
       </Container>
     </Box>
   );
