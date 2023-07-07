@@ -14,10 +14,9 @@ import {
 
 
 export const HomeSection = () => {
-
   return (
     <Box
-      minH="85vh"
+      minH="75vh"
       bgGradient="linear(to-b, #1a202c 0%, #121417 70%)"
     >
       <Container
@@ -31,7 +30,7 @@ export const HomeSection = () => {
             >
               <Heading
                 as={motion.div}
-                initial={{ opacity: 0 }}
+                initial={{ opacity: 0, }}
                 whileInView={{ opacity: 1, transition: { duration: 1 } }}
                 pb={4}
                 size="3xl"
@@ -42,8 +41,8 @@ export const HomeSection = () => {
               </Heading>
               <Image
                 as={motion.img}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, transition: { duration: 1 } }}
+                initial={{ opacity: 0, filter: "blur(5px)" }}
+                whileInView={{ opacity: 1, filter: "blur(0px)", transition: { duration: 0.5 } }}
                 my={-8}
                 boxSize="600px"
                 src='caberTek_hero.svg'

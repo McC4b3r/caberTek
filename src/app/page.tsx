@@ -4,15 +4,24 @@ import React, { useEffect, useMemo, useState } from 'react'
 import { Box, Center, Spinner } from '@chakra-ui/react'
 import Navbar from './components/Navbar'
 import { HomeSection } from './sections/home';
-import { useWindowScroll } from 'react-use';
 import { AboutSection } from './sections/about';
 import { Services } from './sections/services';
+import { servicesData, technologies } from './sections/services/data';
+import { useScroll, useMotionValueEvent } from 'framer-motion';
 
 export default function Home() {
   const sectionLinks = ['Home', 'About', 'Services', 'Projects', 'Contact'];
   const [isLoading, setIsLoading] = useState(true);
-  const { y } = useWindowScroll();
-  const isFixed = y > 1;
+  const { scrollY } = useScroll();
+  const [isFixed, setIsFixed] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (latest > 1) {
+      setIsFixed(true);
+    } else {
+      setIsFixed(false);
+    }
+  });
 
   useEffect(() => {
     setIsLoading(false);
@@ -46,7 +55,9 @@ export default function Home() {
       />
       <HomeSection />
       <AboutSection />
-      <Services />
+      <Services
+        data={servicesData}
+      />
     </Box>
   )
 }

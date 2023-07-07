@@ -11,13 +11,8 @@ import {
   VStack,
   Image,
   Divider,
-  List,
-  ListItem,
-  ListIcon,
   Link,
 } from '@chakra-ui/react';
-import { CheckCircleIcon } from '@chakra-ui/icons';
-// import Link from 'next/link';
 import { motion, useScroll } from 'framer-motion';
 
 const nameLink = (
@@ -31,16 +26,10 @@ const nameLink = (
 )
 
 export const AboutSection = () => {
-  const skills = [
-    "Building websites",
-    "Updating existing websites",
-    "App/Webapp development",
-    "Web design",
-  ];
-  const scrollYProgress = useScroll();
 
   return (
     <Box
+      pt={20}
       id="about"
       minH="85vh"
       bgGradient="linear(to-b, #121417 0%, #1a202c 70%)"
@@ -50,6 +39,9 @@ export const AboutSection = () => {
       >
         <Center>
           <Heading
+            as={motion.div}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 1 } }}
             pb={16}
             size="2xl"
             color="#00a6a2"
@@ -109,36 +101,6 @@ export const AboutSection = () => {
             >
             </Box>
             <HStack>
-              {/* <Box
-                bg="#223850"
-                borderRadius="xl"
-                mt={2}
-                px={8}
-                py={12}
-              >
-                <Heading
-                  color="#fecc89"
-                  mb={4}
-                >
-                  For help with:
-                </Heading>
-                <List>
-                  {skills.map((skill: string, i: number) => (
-                    <ListItem
-                      key={i}
-                    >
-                      <ListIcon
-                        color="#5fb600"
-                        as={CheckCircleIcon}
-                      />
-                      {skill}
-                    </ListItem>
-                  ))}
-                </List>
-                <Box>
-                  ...and more!
-                </Box>
-              </Box> */}
               <Spacer />
               <VStack>
                 <Box
