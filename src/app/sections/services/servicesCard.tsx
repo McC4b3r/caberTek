@@ -9,7 +9,7 @@ import {
   WrapItem,
   Divider
 } from '@chakra-ui/react';
-import { motion, useMotionValue, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ServiceCardProps } from '../../types';
 
 const hoverAnimation = {
