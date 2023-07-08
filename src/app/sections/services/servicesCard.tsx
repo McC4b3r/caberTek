@@ -12,10 +12,18 @@ import {
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import { ServiceCardProps } from '../../types';
 
+const hoverAnimation = {
+  y: -10,
+  transition:
+  {
+    type: "spring",
+    stiffness: 600,
+    damping: 9
+  }
+}
+
 
 export const ServicesCard: React.FC<ServiceCardProps> = ({ service }) => {
-  const x = useMotionValue(10)
-  const y = useTransform(x, value => Math.sin(value / 10) * 50)
   return (
     <WrapItem
     >
@@ -23,7 +31,7 @@ export const ServicesCard: React.FC<ServiceCardProps> = ({ service }) => {
         as={motion.div}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 1 } }}
-        whileHover={{ scale: 1.02 }}
+        whileHover={hoverAnimation}
         maxW='sm'
         bg='#0f4358'
         my={4}
