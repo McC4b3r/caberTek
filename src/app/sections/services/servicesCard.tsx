@@ -7,7 +7,8 @@ import {
   Text,
   VStack,
   WrapItem,
-  Divider
+  Divider,
+  Image
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { ServiceCardProps } from '../../types';
@@ -18,7 +19,7 @@ const hoverAnimation = {
   {
     type: "spring",
     stiffness: 600,
-    damping: 9
+    damping: 12,
   }
 }
 
@@ -46,15 +47,19 @@ export const ServicesCard: React.FC<ServiceCardProps> = ({ service }) => {
               <Heading
                 color='#72b9ff'
                 textAlign='center'
-                mb={2}
                 size='md'
               >
                 {service.title}
               </Heading>
               <Divider
               />
+              <Image
+                mt={1}
+                boxSize="50px"
+                color="white"
+                src={service.image} alt="icon" />
               <Text
-                mt={4}
+                mt={1}
                 textAlign='center'
               >
                 {service.description}
