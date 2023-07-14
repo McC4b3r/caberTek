@@ -11,6 +11,7 @@ import {
   Center,
   Divider,
   VStack,
+  Link,
 } from '@chakra-ui/react';
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -19,9 +20,20 @@ export const CaberTek = () => {
   return (
     <Card
       as={motion.div}
-      initial={{ opacity: 0, x: 100 }}
-      whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
-      w="80%">
+      mr={-10}
+      initial={{
+        opacity: 0,
+        x: 50,
+        boxShadow: "0px 0px 0px 0px #014e4d"
+      }}
+      whileInView={{
+        opacity: 1,
+        boxShadow: "6px 6px 10px 0px #014e4d",
+        x: 0, transition: {
+          duration: 1
+        }
+      }}
+      w="70%">
       <CardHeader>
         <Center>
 
@@ -29,7 +41,7 @@ export const CaberTek = () => {
             <Heading
               size="lg"
             >
-              caberTek - Professional business website
+              caberTek.com - A Professional business website
             </Heading>
             <Divider />
           </VStack>
@@ -38,6 +50,7 @@ export const CaberTek = () => {
       <CardBody>
         <Flex
           alignItems="center"
+          mb={4}
         >
           <Box>
             <Text
@@ -47,13 +60,25 @@ export const CaberTek = () => {
             </Text>
           </Box>
           <Spacer />
-          <Image
-            borderRadius="10px"
-            boxShadow="6px 6px 0px 0px #4d647c"
-            width="500px"
-            src="https://imagedelivery.net/9H_fe7CeacG3esKoMEwYXg/0754eee1-0206-4cc7-a079-4d6ad74c5000/public"
-            alt="caberTek"
-          />
+          <Link
+            isExternal
+            href="https://cabertek.com"
+          >
+            <Image
+              as={motion.img}
+              initial={{
+                boxShadow: "0px 0px 0px 0px #4d647c"
+              }}
+              whileInView={{
+                boxShadow: "-6px 6px 0px 0px #4d647c",
+                transition: { duration: 1 }
+              }}
+              borderRadius="10px"
+              maxW="500px"
+              src="https://imagedelivery.net/9H_fe7CeacG3esKoMEwYXg/0754eee1-0206-4cc7-a079-4d6ad74c5000/public"
+              alt="caberTek"
+            />
+          </Link>
         </Flex>
       </CardBody>
     </Card>

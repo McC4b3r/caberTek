@@ -11,17 +11,33 @@ import {
   Center,
   Divider,
   VStack,
+  Link,
 } from '@chakra-ui/react';
 import React from 'react';
+import NextLink from 'next/link'
 import { motion } from 'framer-motion';
 
 export const Mentumm = () => {
   return (
     <Card
+      borderRadius="lg"
+      ml={-10}
       as={motion.div}
-      initial={{ opacity: 0, x: -100 }}
-      whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
-      w="80%">
+      initial={{
+        opacity: 0,
+        x: -50,
+        boxShadow: "0px 0px 0px 0px #014e4d"
+      }}
+      whileInView={{
+        opacity: 1,
+        boxShadow: "-6px 6px 10px 0px #014e4d",
+        x: 0,
+        transition: {
+          duration: 1
+        }
+      }}
+      w="70%"
+    >
       <CardHeader>
         <Center>
           <VStack>
@@ -37,14 +53,28 @@ export const Mentumm = () => {
       <CardBody>
         <Flex
           alignItems="center"
+          mb={4}
         >
-          <Image
-            borderRadius="10px"
-            boxShadow="-6px 6px 0px 0px #4d647c"
-            width="500px"
-            src="https://imagedelivery.net/9H_fe7CeacG3esKoMEwYXg/40f7c921-f424-4cd4-9869-2f6b1db60e00/public"
-            alt="Mentumm"
-          />
+          <Link
+            isExternal
+            href='https://mentumm.com'
+          >
+            <Image
+              as={motion.img}
+              initial={{
+                boxShadow: "0px 0px 0px 0px #4d647c"
+              }}
+              whileInView={{
+                boxShadow: "6px 6px 0px 0px #4d647c",
+                transition: { duration: 1 }
+              }}
+              borderRadius="10px"
+              maxW="500px"
+              src="https://imagedelivery.net/9H_fe7CeacG3esKoMEwYXg/40f7c921-f424-4cd4-9869-2f6b1db60e00/public"
+              alt="Mentumm"
+            />
+
+          </Link>
           <Spacer />
           <Box
           >

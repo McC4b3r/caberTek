@@ -22,6 +22,7 @@ export const Projects = () => {
     >
       <Container
         maxW="85%"
+        mb={4}
       >
         <Center>
           <Heading

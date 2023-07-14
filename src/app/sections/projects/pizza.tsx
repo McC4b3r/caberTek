@@ -11,6 +11,7 @@ import {
   Center,
   Divider,
   VStack,
+  Link,
 } from '@chakra-ui/react';
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -19,9 +20,20 @@ export const Pizza = () => {
   return (
     <Card
       as={motion.div}
-      initial={{ opacity: 0, x: -100 }}
-      whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
-      w="80%">
+      ml={-10}
+      initial={{
+        opacity: 0,
+        x: -50,
+        boxShadow: "0px 0px 0px 0px #014e4d"
+      }}
+      whileInView={{
+        opacity: 1,
+        boxShadow: "-6px 6px 10px 0px #014e4d",
+        x: 0, transition: {
+          duration: 1
+        }
+      }}
+      w="70%">
       <CardHeader>
         <Center>
           <VStack>
@@ -37,14 +49,27 @@ export const Pizza = () => {
       <CardBody>
         <Flex
           alignItems="center"
+          mb={4}
         >
-          <Image
-            borderRadius="10px"
-            boxShadow="-6px 6px 0px 0px #4d647c"
-            width="500px"
-            src="https://imagedelivery.net/9H_fe7CeacG3esKoMEwYXg/0093e64d-d1dc-45a2-ae1f-bb22282f2500/public"
-            alt="Pizza"
-          />
+          <Link
+            isExternal
+            href='https://ryan-mccabe-pizza-party.vercel.app/'
+          >
+            <Image
+              as={motion.img}
+              initial={{
+                boxShadow: "0px 0px 0px 0px #4d647c"
+              }}
+              whileInView={{
+                boxShadow: "6px 6px 0px 0px #4d647c",
+                transition: { duration: 1 }
+              }}
+              borderRadius="10px"
+              maxW="500px"
+              src="https://imagedelivery.net/9H_fe7CeacG3esKoMEwYXg/0093e64d-d1dc-45a2-ae1f-bb22282f2500/public"
+              alt="Pizza"
+            />
+          </Link>
           <Spacer />
           <Box
           >
