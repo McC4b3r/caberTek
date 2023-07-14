@@ -21,7 +21,7 @@ export const servicesData = {
       image: 'maintenance.svg',
     },
     {
-      title: 'Search Engine Optimization',
+      title: 'Technical SEO',
       description: `68% of online experiences begin with a search engine. We can help ensure you're always on the first page of a search engine so you're impossible to miss.`,
       image: 'seo.svg'
     },

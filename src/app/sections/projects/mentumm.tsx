@@ -20,6 +20,7 @@ import { motion } from 'framer-motion';
 export const Mentumm = () => {
   return (
     <Card
+      bgColor="#203959"
       borderRadius="lg"
       ml={-10}
       as={motion.div}
@@ -40,11 +41,20 @@ export const Mentumm = () => {
     >
       <CardHeader>
         <Center>
-          <VStack>
+          <VStack
+            w="50%"
+          >
             <Heading
+              color="#72b9ff"
               size="lg"
             >
-              Mentumm - On demand professional coaching
+              Mentumm
+            </Heading>
+            <Heading
+              color='#72b9ff'
+              size="xs"
+            >
+              On demand professional coaching
             </Heading>
             <Divider />
           </VStack>

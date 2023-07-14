@@ -19,6 +19,7 @@ import { motion } from 'framer-motion';
 export const Pizza = () => {
   return (
     <Card
+      bgColor="#203959"
       as={motion.div}
       ml={-10}
       initial={{
@@ -36,11 +37,20 @@ export const Pizza = () => {
       w="70%">
       <CardHeader>
         <Center>
-          <VStack>
+          <VStack
+            w="50%"
+          >
             <Heading
+              color='#72b9ff'
               size="lg"
             >
-              caberTek Pizza - A full-stack webapp
+              caberTek Pizza
+            </Heading>
+            <Heading
+              color='#72b9ff'
+              size="xs"
+            >
+              A full-stack webapp
             </Heading>
             <Divider />
           </VStack>

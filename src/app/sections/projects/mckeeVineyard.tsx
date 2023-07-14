@@ -20,6 +20,7 @@ import { motion } from 'framer-motion';
 export const MckeeVineyard = () => {
   return (
     <Card
+      bgColor="#203959"
       as={motion.div}
       mr={-10}
       initial={{
@@ -38,11 +39,20 @@ export const MckeeVineyard = () => {
     >
       <CardHeader>
         <Center>
-          <VStack>
+          <VStack
+            w="50%"
+          >
             <Heading
+              color='#72b9ff'
               size="lg"
             >
-              McKee Vineyard - A family comissioned webapp
+              McKee Vineyard
+            </Heading>
+            <Heading
+              color='#72b9ff'
+              size="xs"
+            >
+              A family comissioned webapp
             </Heading>
             <Divider />
           </VStack>

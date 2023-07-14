@@ -19,6 +19,7 @@ import { motion } from 'framer-motion';
 export const CaberTek = () => {
   return (
     <Card
+      bgColor="#203959"
       as={motion.div}
       mr={-10}
       initial={{
@@ -37,11 +38,20 @@ export const CaberTek = () => {
       <CardHeader>
         <Center>
 
-          <VStack>
+          <VStack
+            w="50%"
+          >
             <Heading
+              color='#72b9ff'
               size="lg"
             >
-              caberTek.com - A Professional business website
+              caberTek.com
+            </Heading>
+            <Heading
+              color='#72b9ff'
+              size="xs"
+            >
+              A professional business website
             </Heading>
             <Divider />
           </VStack>
