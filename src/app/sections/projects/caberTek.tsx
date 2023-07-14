@@ -13,10 +13,14 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 export const CaberTek = () => {
   return (
     <Card
+      as={motion.div}
+      initial={{ opacity: 0, x: 100 }}
+      whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
       w="80%">
       <CardHeader>
         <Center>
