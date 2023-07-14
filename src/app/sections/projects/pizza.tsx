@@ -28,7 +28,7 @@ export const Pizza = () => {
       }}
       whileInView={{
         opacity: 1,
-        boxShadow: "-6px 6px 10px 0px #014e4d",
+        boxShadow: "-6px 6px 0px 0px #014e4d",
         x: 0, transition: {
           duration: 1
         }
