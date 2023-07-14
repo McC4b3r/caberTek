@@ -35,6 +35,7 @@ export const Pizza = () => {
         >
           <Image
             borderRadius="10px"
+            boxShadow="-6px 6px 0px 0px #4d647c"
             width="500px"
             src="https://imagedelivery.net/9H_fe7CeacG3esKoMEwYXg/0093e64d-d1dc-45a2-ae1f-bb22282f2500/public"
             alt="Pizza"

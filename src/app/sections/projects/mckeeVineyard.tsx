@@ -45,6 +45,7 @@ export const MckeeVineyard = () => {
           <Spacer />
           <Image
             borderRadius="10px"
+            boxShadow="6px 6px 0px 0px ###4d647c"
             width="500px"
             src="https://imagedelivery.net/9H_fe7CeacG3esKoMEwYXg/ccaff08f-d036-4328-8e9c-925a53411b00/public"
             alt="Mckee Vineyard"

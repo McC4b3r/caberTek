@@ -45,6 +45,7 @@ export const CaberTek = () => {
           <Spacer />
           <Image
             borderRadius="10px"
+            boxShadow="6px 6px 0px 0px #4d647c"
             width="500px"
             src="https://imagedelivery.net/9H_fe7CeacG3esKoMEwYXg/0754eee1-0206-4cc7-a079-4d6ad74c5000/public"
             alt="caberTek"

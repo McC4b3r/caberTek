@@ -35,6 +35,7 @@ export const Mentumm = () => {
         >
           <Image
             borderRadius="10px"
+            boxShadow="-6px 6px 0px 0px #4d647c"
             width="500px"
             src="https://imagedelivery.net/9H_fe7CeacG3esKoMEwYXg/40f7c921-f424-4cd4-9869-2f6b1db60e00/public"
             alt="Mentumm"
