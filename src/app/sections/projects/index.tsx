@@ -35,7 +35,9 @@ export const Projects = () => {
             Projects and Demos
           </Heading>
         </Center>
-        <VStack>
+        <VStack
+          spacing={8}
+        >
           <Mentumm />
           <MckeeVineyard />
           <Pizza />
