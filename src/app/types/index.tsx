@@ -3,6 +3,7 @@ export interface ServicesProps {
     services: Array<{
       title: string;
       description: string
+      image?: string;
     }>;
   };
 };
@@ -11,5 +12,6 @@ export interface ServiceCardProps {
   service: {
     title: string;
     description: string;
+    image?: string
   };
 };

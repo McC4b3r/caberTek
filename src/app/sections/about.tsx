@@ -67,7 +67,7 @@ export const AboutSection = () => {
               <Text
                 as={motion.div}
                 initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, transition: { duration: 1, delay: 0.2 } }}
+                whileInView={{ opacity: 1, transition: { duration: 1.2 } }}
                 mb={8}
               >
                 Between registering domains, creating a website, updating that website, linking services or products, setting up email systems, ensuring proper SEO, and providing a great user experience, it can be an overwhelming experience to manage that all yourself while also taking charge of every other aspect of your business. While there are solutions out there to ease that burden, they often have a learning curve that requires time that would be better spent on the bigger picture of the business. That&apos;s where caberTek comes in.
@@ -76,7 +76,7 @@ export const AboutSection = () => {
                 mb={8}
                 as={motion.div}
                 initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, transition: { duration: 1, delay: 0.4 } }}
+                whileInView={{ opacity: 1, transition: { duration: 1.4 } }}
               >
                 With caberTek, you have a dedicated professional who handles all of that stuff for you. You also get a level of customization and service that pre-built solutions such as SquareSpace and Wordpress alone are unable to offer. With experience from rocket ship startups to fortune 100 companies, and deep familiarity with today&apos;s modern tech-stacks and tools, caberTek is able to offer customized solutions for any business that is looking to offload their technical burden. From simple solutions to entire technical management, caberTek can help.
               </Text>
