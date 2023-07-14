@@ -4,8 +4,13 @@ import {
   Container,
   Center,
   Heading,
+  VStack,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
+import { MckeeVineyard } from './mckeeVineyard';
+import { Mentumm } from './mentumm';
+import { Pizza } from './pizza';
+import { CaberTek } from './caberTek';
 
 export const Projects = () => {
   return (
@@ -30,6 +35,12 @@ export const Projects = () => {
             Projects and Demos
           </Heading>
         </Center>
+        <VStack>
+          <Mentumm />
+          <MckeeVineyard />
+          <Pizza />
+          <CaberTek />
+        </VStack>
       </Container>
     </Box>
   )
