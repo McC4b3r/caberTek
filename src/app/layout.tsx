@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'caberTek',
   colorScheme: 'dark',
   description: 'Web Development Solutions',
+  icons: {
+    icon: 'icon.svg'
+  }
 }
 
 export default function RootLayout({
