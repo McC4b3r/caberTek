@@ -8,23 +8,26 @@ import {
   VStack,
   WrapItem,
   Divider,
-  Image
+  Image,
+  useMediaQuery,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { ServiceCardProps } from '../../types';
 
-const hoverAnimation = {
-  y: -10,
-  transition:
-  {
-    type: "spring",
-    stiffness: 600,
-    damping: 12,
-  }
-}
-
 
 export const ServicesCard: React.FC<ServiceCardProps> = ({ service }) => {
+  const [isHoverable] = useMediaQuery("(hover: hover)");
+  const hoverAnimation = isHoverable
+    ? {
+      y: -10,
+      transition: {
+        type: "spring",
+        stiffness: 600,
+        damping: 12,
+      },
+    }
+    : {};
+
   return (
     <WrapItem
     >
