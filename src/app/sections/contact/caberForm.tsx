@@ -69,6 +69,7 @@ export const CaberForm = () => {
                   </FormLabel>
                 </Center>
                 <Input
+                  bgColor='#09101846'
                   id="firstName"
                   name="firstName"
                   value={values.firstName}
@@ -88,6 +89,7 @@ export const CaberForm = () => {
                   </FormLabel>
                 </Center>
                 <Input
+                  bgColor='#09101846'
                   id="lastName"
                   name="lastName"
                   value={values.lastName}
@@ -110,6 +112,7 @@ export const CaberForm = () => {
                   </FormLabel>
                 </Center>
                 <Input
+                  bgColor='#09101846'
                   id="email"
                   name="email"
                   value={values.email}
@@ -130,6 +133,7 @@ export const CaberForm = () => {
                   </FormLabel>
                 </Center>
                 <Textarea
+                  bgColor='#09101846'
                   id="message"
                   name="message"
                   value={values.message}
@@ -141,6 +145,8 @@ export const CaberForm = () => {
               </FormControl>
               <Button
                 mt={4}
+                bgColor='#2f66a478'
+                boxShadow='0px 4px 5px #05030382'
                 color="#72b9ff"
                 _hover={{ color: '#91ca20' }}
                 w="80%"
