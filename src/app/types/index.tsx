@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface ServicesProps {
   data: {
     services: Array<{
@@ -15,3 +17,10 @@ export interface ServiceCardProps {
     image?: string
   };
 };
+
+export interface SectionContainerProps {
+  id: string;
+  heading: string;
+  gradientDirection: string;
+  children: ReactNode
+}
