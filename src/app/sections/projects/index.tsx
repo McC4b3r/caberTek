@@ -21,7 +21,7 @@ export const Projects = () => {
       bgGradient="linear(to-b, #121417 0%, #1a202c 70%)"
     >
       <Container
-        maxW={['90%', '85%', '85%', '85%', '95%']}
+        maxW={['90%', '90%', '85%', '85%', '95%']}
         mb={4}
       >
         <Center>

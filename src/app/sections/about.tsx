@@ -96,7 +96,6 @@ export const AboutSection = () => {
           </Container>
           <Spacer />
           <VStack
-
           >
             <Heading
               as={motion.div}
