@@ -1,4 +1,4 @@
-import { Box, Center } from '@chakra-ui/react';
+import { Box, Center, Text } from '@chakra-ui/react';
 import React from 'react';
 import { SectionContainer } from '../components/SectionContainer';
 
@@ -10,7 +10,7 @@ export const Footer = () => {
       <Center
         py={8}
       >
-        © 2023 caberTek
+        © 2023 <Text ml={1} color="#f30002" >caberTek</Text>
       </Center>
     </Box>
   )
