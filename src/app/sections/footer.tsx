@@ -1,6 +1,5 @@
 import { Box, Center, Text } from '@chakra-ui/react';
 import React from 'react';
-import { SectionContainer } from '../components/SectionContainer';
 
 export const Footer = () => {
   return (

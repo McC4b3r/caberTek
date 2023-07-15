@@ -1,12 +1,12 @@
 'use client'
 
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Box, Center, Spinner } from '@chakra-ui/react'
 import Navbar from './components/Navbar'
 import { HomeSection } from './sections/home';
 import { AboutSection } from './sections/about';
 import { Services } from './sections/services';
-import { servicesData, technologies } from './sections/services/data';
+import { servicesData } from './sections/services/data';
 import { useScroll, useMotionValueEvent } from 'framer-motion';
 import { Projects } from './sections/projects';
 import { Contact } from './sections/contact';

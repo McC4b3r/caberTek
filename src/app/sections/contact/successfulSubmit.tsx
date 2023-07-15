@@ -1,9 +1,9 @@
+import React from 'react';
 import {
   Box,
   Image,
   Text,
 } from '@chakra-ui/react';
-import React, { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 
 export const SuccessfulSubmit: React.FC = () => {
