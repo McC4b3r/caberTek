@@ -15,6 +15,7 @@ import {
 
 
 export const HomeSection = () => {
+  const caberTek = 'caberTek ';
   return (
     <Box
       minH="75vh"
@@ -61,7 +62,12 @@ export const HomeSection = () => {
                 >
                   <Heading
                     as="span"
-                    color="#f30002">caberTek</Heading> has you covered.
+                    size={['xl', 'xl', '2xl', '2xl', '2xl']}
+                    color="#f30002"
+                  >
+                    {caberTek}
+                  </Heading>
+                  has you covered.
                 </Heading>
               </Box>
               <Divider
