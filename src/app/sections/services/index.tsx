@@ -39,7 +39,7 @@ export const Services: React.FC<ServicesProps> = ({
           </Heading>
         </Center>
         <Flex
-          mt={[24, 24, 24, 8, 8]}
+          mt={[20, 20, 20, 8, 8]}
           wrap={{ lg: 'wrap', xl: 'wrap', '2xl': 'wrap' }}
           justify={['flex-start', 'flex-start', 'flex-start', 'center', 'center']}
           overflowX={['scroll', 'scroll', 'scroll', null, null]}

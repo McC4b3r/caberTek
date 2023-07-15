@@ -78,7 +78,7 @@ export const AboutSection = () => {
                 whileInView={{ opacity: 1, transition: { duration: 1.2 } }}
                 mb={8}
                 textAlign={['center', 'center', 'left', 'left', 'left']}
-                fontSize={['s', 'sm', 'sm', 'md', 'md']}
+                fontSize={['sm', 'sm', 'sm', 'md', 'md']}
               >
                 Between registering domains, creating a website, updating that website, linking services or products, setting up email systems, ensuring proper SEO, and providing a great user experience, it can be an overwhelming experience to manage that all yourself while also taking charge of every other aspect of your business. While there are solutions out there to ease that burden, they often have a learning curve that requires time that would be better spent on the bigger picture of the business. That&apos;s where caberTek comes in.
               </Text>

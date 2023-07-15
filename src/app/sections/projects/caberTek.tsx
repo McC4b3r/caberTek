@@ -22,6 +22,7 @@ export const CaberTek = () => {
     <Card
       bgColor="#203959"
       as={motion.div}
+      mb={4}
       mr={[0, 0, -10, -10, -10, -10]}
       initial={{
         opacity: 0,
