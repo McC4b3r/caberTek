@@ -9,7 +9,8 @@ import { Services } from './sections/services';
 import { servicesData, technologies } from './sections/services/data';
 import { useScroll, useMotionValueEvent } from 'framer-motion';
 import { Projects } from './sections/projects';
-import { ContactForm } from './sections/contact';
+import { Contact } from './sections/contact';
+import { Footer } from './sections/footer';
 
 export default function Home() {
   const sectionLinks = ['Home', 'About', 'Services', 'Projects', 'Contact'];
@@ -61,7 +62,8 @@ export default function Home() {
         data={servicesData}
       />
       <Projects />
-      <ContactForm />
+      <Contact />
+      <Footer />
     </Box>
   )
 }
