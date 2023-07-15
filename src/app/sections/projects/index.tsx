@@ -21,7 +21,7 @@ export const Projects = () => {
       bgGradient="linear(to-b, #121417 0%, #1a202c 70%)"
     >
       <Container
-        maxW="85%"
+        maxW={['90%', '85%', '85%', '85%', '95%']}
         mb={4}
       >
         <Center>
@@ -31,12 +31,14 @@ export const Projects = () => {
             whileInView={{ opacity: 1, transition: { duration: 1 } }}
             pb={16}
             size="2xl"
+            textAlign="center"
             color="#00a6a2"
           >
             Projects and Demos
           </Heading>
         </Center>
         <VStack
+          overflowX="hidden"
           spacing={8}
         >
           <Mentumm />

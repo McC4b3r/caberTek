@@ -4,7 +4,7 @@ import {
   Container,
   Center,
   Heading,
-  Wrap,
+  Flex,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { ServicesProps } from '../../types';
@@ -23,7 +23,7 @@ export const Services: React.FC<ServicesProps> = ({
       bgGradient="linear(to-b, #1a202c 0%, #121417 70%)"
     >
       <Container
-        maxW="85%"
+        maxW={['100%', '100%', '100%', '100%', '85%']}
       >
         <Center>
           <Heading
@@ -32,13 +32,17 @@ export const Services: React.FC<ServicesProps> = ({
             whileInView={{ opacity: 1, transition: { duration: 1 } }}
             pb={16}
             size="2xl"
+            textAlign="center"
             color="#00a6a2"
           >
             Available Services
           </Heading>
         </Center>
-        <Wrap
-          justify='center'
+        <Flex
+          mt={[24, 24, 24, 8, 8]}
+          wrap={{ lg: 'wrap', xl: 'wrap', '2xl': 'wrap' }}
+          justify={['flex-start', 'flex-start', 'flex-start', 'center', 'center']}
+          overflowX={['scroll', 'scroll', 'scroll', null, null]}
         >
           {services.map((service, i) => (
             <ServicesCard
@@ -46,7 +50,7 @@ export const Services: React.FC<ServicesProps> = ({
               key={i}
             />
           ))}
-        </Wrap>
+        </Flex>
       </Container>
     </Box>
   )

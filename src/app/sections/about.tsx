@@ -12,6 +12,7 @@ import {
   Image,
   Divider,
   Link,
+  Stack,
 } from '@chakra-ui/react';
 import { motion, useScroll } from 'framer-motion';
 
@@ -35,7 +36,8 @@ export const AboutSection = () => {
       bgGradient="linear(to-b, #121417 0%, #1a202c 70%)"
     >
       <Container
-        maxW="85%"
+        id="the one"
+        maxW={['100%', '100%', '85%', '85%', '85%']}
       >
         <Center>
           <Heading
@@ -43,24 +45,30 @@ export const AboutSection = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, transition: { duration: 1 } }}
             pb={16}
-            size="2xl"
+            size={['xl', 'xl', '2xl', '2xl', '2xl']}
+            textAlign="center"
             color="#00a6a2"
           >
             What&apos;s caberTek?
           </Heading>
         </Center>
-        <Flex>
+        <Stack
+          direction={['column', 'column', 'column', 'column', 'row']}
+        >
           <Container
-            maxW="2xl"
+            maxW={['auto', 'auto', 'auto', 'auto', "2xl"]}
           >
             <VStack
               mt={4}
+              w={['100%', 'auto']}
             >
               <Text
                 as={motion.div}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, transition: { duration: 1 } }}
                 mb={8}
+                textAlign={['center', 'center', 'left', 'left', 'left']}
+                fontSize={['sm', 'sm', 'sm', 'md', 'md']}
               >
                 Some would say caberTek is the leading web development company in the tech space today. That someone is me: {nameLink} - the creater of caberTek. I created this company because I want to help other business owners grow and scale their business without having to worry about a many of the technical requirements of a modern business. A company&apos;s vision should not be hindered by a lack of familiarity with ever-evolving tools and services that are required to thrive in today&apos;s market.
               </Text>
@@ -69,11 +77,15 @@ export const AboutSection = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, transition: { duration: 1.2 } }}
                 mb={8}
+                textAlign={['center', 'center', 'left', 'left', 'left']}
+                fontSize={['s', 'sm', 'sm', 'md', 'md']}
               >
                 Between registering domains, creating a website, updating that website, linking services or products, setting up email systems, ensuring proper SEO, and providing a great user experience, it can be an overwhelming experience to manage that all yourself while also taking charge of every other aspect of your business. While there are solutions out there to ease that burden, they often have a learning curve that requires time that would be better spent on the bigger picture of the business. That&apos;s where caberTek comes in.
               </Text>
               <Text
                 mb={8}
+                fontSize={['sm', 'sm', 'sm', 'md', 'md']}
+                textAlign={['center', 'center', 'left', 'left', 'left']}
                 as={motion.div}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, transition: { duration: 1.4 } }}
@@ -83,13 +95,16 @@ export const AboutSection = () => {
             </VStack>
           </Container>
           <Spacer />
-          <VStack>
+          <VStack
+
+          >
             <Heading
               as={motion.div}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               size="xl"
               color="#00a6a2"
+              textAlign="center"
               mb={4}
 
             >
@@ -111,7 +126,7 @@ export const AboutSection = () => {
                   <Image
                     px={4}
                     my={-8}
-                    boxSize="500px"
+                    boxSize="32em"
                     src='me.svg'
                     alt="logo" />
                   <Divider
@@ -132,7 +147,7 @@ export const AboutSection = () => {
               </VStack>
             </HStack>
           </VStack>
-        </Flex>
+        </Stack>
         <Box
         >
         </Box>

@@ -17,13 +17,14 @@ export const Contact = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, transition: { duration: 1 } }}
           size="md"
+          textAlign="center"
           color="#00a6a2"
         >
           Have questions? Looking for a quote? Let us know!
         </Heading>
         <Container
           mt={4}
-          maxW="60%"
+          maxW={['100%', 'auto', 'auto', 'auto', '60%']}
         >
           <Text
             as={motion.div}
