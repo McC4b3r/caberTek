@@ -15,7 +15,6 @@ export const Container = ({
       bgGradient="linear(to-b, #121417, #1a202cd9)"
       align="center"
       position={isFixed ? 'fixed' : 'sticky'}
-      // position="fixed"
       top="0px"
       zIndex='2'
       justify="space-between"

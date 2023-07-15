@@ -12,9 +12,9 @@ import {
   Divider,
   VStack,
   Link,
+  Stack,
 } from '@chakra-ui/react';
 import React from 'react';
-import NextLink from 'next/link'
 import { motion } from 'framer-motion';
 
 export const Mentumm = () => {
@@ -22,7 +22,7 @@ export const Mentumm = () => {
     <Card
       bgColor="#203959"
       borderRadius="lg"
-      ml={-10}
+      ml={[0, 0, -10, -10, -10, -10]}
       as={motion.div}
       initial={{
         opacity: 0,
@@ -37,12 +37,12 @@ export const Mentumm = () => {
           duration: 1
         }
       }}
-      w="70%"
+      w={['90%', 'auto', '90%', '70%', '70%']}
     >
       <CardHeader>
         <Center>
           <VStack
-            w="50%"
+            w={['auto', 'auto', 'auto', '70%', '60%']}
           >
             <Heading
               color="#72b9ff"
@@ -51,6 +51,7 @@ export const Mentumm = () => {
               Mentumm
             </Heading>
             <Heading
+              textAlign="center"
               color='#72b9ff'
               size="xs"
             >
@@ -61,12 +62,13 @@ export const Mentumm = () => {
         </Center>
       </CardHeader>
       <CardBody>
-        <Flex
-          alignItems="center"
+        <Stack
+          direction={['column', 'column', 'column', 'column', 'row']}
           mb={4}
         >
           <Link
             isExternal
+            my="auto"
             href='https://mentumm.com'
           >
             <Image
@@ -79,22 +81,26 @@ export const Mentumm = () => {
                 transition: { duration: 1 }
               }}
               borderRadius="10px"
-              maxW="500px"
+              maxW={['100%', '100%', '100%', '90%', '30em']}
+              mx="auto"
               src="https://imagedelivery.net/9H_fe7CeacG3esKoMEwYXg/40f7c921-f424-4cd4-9869-2f6b1db60e00/public"
               alt="Mentumm"
             />
-
           </Link>
           <Spacer />
           <Box
+            my="auto"
           >
             <Text
-              ml={12}
+              ml={['auto', 'auto', 'auto', 'auto', 6]}
+              mr="auto"
+              mt={['1em', '1em', '1em', '1em', 0]}
+              fontSize={['xs', 'sm', 'sm', 'md']}
             >
               A full-fledged webapp, Mentumm is a platform to allow you or a colleague to seek and receive professional coaching for many aspects of business. You&apos;re able to sign up as either a user seeking services, or a coach looking to provide service. Whatever your professional goals are, Mentumm will help connect you with the right coach or client to provide or receive the very best in professional coaching.
             </Text>
           </Box>
-        </Flex>
+        </Stack>
       </CardBody>
     </Card>
   )

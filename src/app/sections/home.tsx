@@ -10,6 +10,7 @@ import {
   VStack,
   Divider,
   Center,
+  Wrap,
 } from '@chakra-ui/react';
 
 
@@ -20,7 +21,7 @@ export const HomeSection = () => {
       bgGradient="linear(to-b, #1a202c 0%, #121417 70%)"
     >
       <Container
-        maxW="85%"
+        maxW="90%"
       >
         <Box
         >
@@ -30,10 +31,11 @@ export const HomeSection = () => {
             >
               <Heading
                 as={motion.div}
+                textAlign={['left', 'left', 'center', 'center', 'center']}
                 initial={{ opacity: 0, }}
                 whileInView={{ opacity: 1, transition: { duration: 1 } }}
                 pb={4}
-                size="3xl"
+                size={['xl', 'xl', '2xl', '2xl']}
                 color="#00a6a2"
 
               >
@@ -43,20 +45,25 @@ export const HomeSection = () => {
                 as={motion.img}
                 initial={{ opacity: 0, filter: "blur(5px)" }}
                 whileInView={{ opacity: 1, filter: "blur(0px)", transition: { duration: 0.5 } }}
-                my={-8}
-                boxSize="600px"
                 src='caberTek_hero.svg'
+                my='1em'
                 alt="logo" />
-              <Heading
-                as={motion.div}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, transition: { duration: 1 } }}
-                color="#539c04"
-                size="2xl"
-                py={4}
+              <Box
               >
-                <Heading size="2xl" as="span" color="#f30002">caberTek</Heading> has you covered.
-              </Heading>
+                <Heading
+                  as={motion.div}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, transition: { duration: 1 } }}
+                  color="#539c04"
+                  size={['xl', 'xl', '2xl', '2xl', '2xl']}
+                  textAlign={['right', 'right', 'center', 'center', 'center']}
+                  py={[10, 8, 8, 8, 8]}
+                >
+                  <Heading
+                    as="span"
+                    color="#f30002">caberTek</Heading> has you covered.
+                </Heading>
+              </Box>
               <Divider
                 my={8}
               />

@@ -13,6 +13,7 @@ import {
   VStack,
   CardFooter,
   Link,
+  Stack,
 } from '@chakra-ui/react';
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -22,7 +23,7 @@ export const MckeeVineyard = () => {
     <Card
       bgColor="#203959"
       as={motion.div}
-      mr={-10}
+      mr={[0, 0, -10, -10, -10, -10]}
       initial={{
         opacity: 0,
         x: 50,
@@ -35,12 +36,12 @@ export const MckeeVineyard = () => {
           duration: 1
         }
       }}
-      w="70%"
+      w={['90%', 'auto', '90%', '70%', '70%']}
     >
       <CardHeader>
         <Center>
           <VStack
-            w="50%"
+            w={['auto', 'auto', 'auto', '70%', '60%']}
           >
             <Heading
               color='#72b9ff'
@@ -49,23 +50,28 @@ export const MckeeVineyard = () => {
               McKee Vineyard
             </Heading>
             <Heading
+              textAlign="center"
               color='#72b9ff'
               size="xs"
             >
-              A family comissioned webapp
+              Family property webapp
             </Heading>
             <Divider />
           </VStack>
         </Center>
       </CardHeader>
       <CardBody>
-        <Flex
-          alignItems="center"
+        <Stack
+          direction={['column', 'column', 'column', 'column', 'row']}
           mb={4}
         >
-          <Box>
+          <Box
+            my='auto'
+          >
             <Text
-              mr={12}
+              mr={['auto', 'auto', 'auto', 'auto', 6]}
+              ml="auto"
+              fontSize={['xs', 'sm', 'sm', 'md']}
             >
               A webapp created to showcase the history and scenic beauty of a family owned piece of land and it&apos;s associated properties. With a rich history that dates back to the 1930&apos;s, several generations have had the pleasure of spending time at The Ranch. Once an apple orchard stretching as far as the eye could see, the majority of the land around The Ranch house is now home to the Lucky Well Vineyard.
             </Text>
@@ -73,6 +79,7 @@ export const MckeeVineyard = () => {
           <Spacer />
           <Link
             isExternal
+            my="auto"
             href='https://mckeevineyard.net'
           >
             <Image
@@ -85,12 +92,14 @@ export const MckeeVineyard = () => {
                 transition: { duration: 1 }
               }}
               borderRadius="10px"
-              maxW="500px"
+              maxW={['100%', '100%', '100%', '90%', '30em']}
+              mx="auto"
+              mt={['1em', '1em', '1em', '1em', 0]}
               src="https://imagedelivery.net/9H_fe7CeacG3esKoMEwYXg/ccaff08f-d036-4328-8e9c-925a53411b00/public"
               alt="Mckee Vineyard"
             />
           </Link>
-        </Flex>
+        </Stack>
       </CardBody>
     </Card>
   )

@@ -31,7 +31,7 @@ export const SectionContainer: React.FC<SectionContainerProps> = ({
       bgGradient={gradientDirection === 'l2d' ? gradientA : gradientB}
     >
       <Container
-        maxW="85%"
+        maxW={['100%', '90%', '80%', '60%', '70%']}
       >
         <Box
         >

@@ -30,15 +30,16 @@ export const ServicesCard: React.FC<ServiceCardProps> = ({ service }) => {
     >
       <Card
         as={motion.div}
+        flexDirection="row"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 1 } }}
         whileHover={hoverAnimation}
         maxW='sm'
         bg='#0f4358'
         my={4}
-        mx={6}
-        w='325px'
-        h="325px"
+        mx={[2, 2, 2, 6, 6]}
+        w={['15em', '15em', '15em', '17em', '20em']}
+        h={['25em', '25em', '25em', '25em', '20em']}
       >
         <CardBody
         >

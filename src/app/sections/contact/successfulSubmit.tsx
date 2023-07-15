@@ -11,14 +11,17 @@ export const SuccessfulSubmit: React.FC = () => {
     <Box>
       <Image
         as={motion.img}
-        initial={{ opacity: 0, x: '-500px' }}
-        whileInView={{ opacity: 1, x: '15px', transition: { duration: 1 } }}
+        initial={{ opacity: 0, x: '-200px' }}
+        whileInView={{ opacity: 1, x: '0px', transition: { duration: 1 } }}
         mt={8}
-        w="300px"
+        w="22em"
         src="email_sent.svg"
         alt="email-sent"
       />
-      <Text mt={8} fontSize="lg">Thanks! You will receive a response soon</Text>
+      <Text
+        textAlign="center"
+        mt={8}
+        fontSize="lg">Thanks! You will receive a response soon</Text>
     </Box>
   )
 }
