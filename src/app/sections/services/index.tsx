@@ -42,7 +42,7 @@ export const Services: React.FC<ServicesProps> = ({
           mt={[20, 20, 20, 8, 8]}
           wrap={{ lg: 'wrap', xl: 'wrap', '2xl': 'wrap' }}
           justify={['flex-start', 'flex-start', 'flex-start', 'center', 'center']}
-          overflowX={['scroll', 'scroll', 'scroll', null, null]}
+          overflowX={['scroll', 'scroll', 'scroll', 'auto', 'auto']}
         >
           {services.map((service, i) => (
             <ServicesCard
