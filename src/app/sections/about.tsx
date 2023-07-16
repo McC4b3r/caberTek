@@ -90,7 +90,7 @@ export const AboutSection = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, transition: { duration: 1.4 } }}
               >
-                With caberTek, you have a dedicated professional who handles all of that stuff for you. You also get a level of customization and service that pre-built solutions such as SquareSpace and Wordpress alone are unable to offer. With experience from rocket ship startups to fortune 100 companies, and deep familiarity with today&apos;s modern tech-stacks and tools, caberTek is able to offer customized solutions for any business that is looking to offload their technical burden. From simple solutions to entire technical management, caberTek can help.
+                With caberTek, you have a dedicated professional who handles all of that stuff for you. You also get a level of customization and service that pre-built solutions such as SquareSpace and Wordpress alone are unable to offer. With experience from rocket ship startups to fortune 100 companies and deep familiarity with today&apos;s modern tech-stacks and tools, caberTek is able to offer customized solutions for any business that is looking to offload their technical burden. From simple solutions to entire technical management, caberTek can help.
               </Text>
             </VStack>
           </Container>
