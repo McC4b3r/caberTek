@@ -1,5 +1,5 @@
-import React from 'react';
-import { Spacer, useDisclosure, useMediaQuery } from "@chakra-ui/react";
+import React, { useRef } from 'react';
+import { Spacer, useDisclosure, useMediaQuery, useOutsideClick } from "@chakra-ui/react";
 import { Logo } from "./logo";
 import { Container } from "./container";
 import { MenuLinks } from "./menuLinks";
@@ -14,9 +14,15 @@ const Navbar = ({
 }) => {
   const { isOpen, onToggle } = useDisclosure();
   const [isDesktop] = useMediaQuery("(min-width: 768px)");
+  const menuRef = useRef(null);
+  useOutsideClick({
+    ref: menuRef,
+    handler: () => isOpen ? onToggle() : null
+  })
 
   return (
     <Container
+      menuRef={menuRef}
       isFixed={isFixed}
     >
       <Logo />

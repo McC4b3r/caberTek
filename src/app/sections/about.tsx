@@ -70,7 +70,7 @@ export const AboutSection = () => {
                 textAlign={['center', 'center', 'left', 'left', 'left']}
                 fontSize={['sm', 'sm', 'sm', 'md', 'md']}
               >
-                Some would say caberTek is the leading web development company in the tech space today. That someone is me: {nameLink} - the creater of caberTek. I created this company because I want to help other business owners grow and scale their business without having to worry about a many of the technical requirements of a modern business. A company&apos;s vision should not be hindered by a lack of familiarity with ever-evolving tools and services that are required to thrive in today&apos;s market.
+                Some would say caberTek is the leading web development company in the tech space today. That someone is me: {nameLink} - the creater of caberTek. I created this company because I want to help other business owners grow and scale their business without having to worry about many of the technical requirements of a modern business. A company&apos;s vision should not be hindered by a lack of familiarity with ever-evolving tools and services that are required to thrive in today&apos;s market.
               </Text>
               <Text
                 as={motion.div}

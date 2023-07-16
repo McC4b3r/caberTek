@@ -1,4 +1,4 @@
-import React from "react";
+import React, { RefObject } from "react";
 import {
   Box,
   Collapse,
@@ -8,11 +8,11 @@ import LinkStack from "./linkStack";
 export const MenuLinks = ({
   isOpen,
   isDesktop,
-  sections
+  sections,
 }: {
   isOpen: boolean,
   isDesktop: boolean,
-  sections: Array<string>
+  sections: Array<string>,
 }) => {
 
   return (
