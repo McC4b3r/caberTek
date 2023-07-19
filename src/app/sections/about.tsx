@@ -71,7 +71,7 @@ export const AboutSection = () => {
                 textAlign={['center', 'center', 'left', 'left', 'left']}
                 fontSize='md'
               >
-                CaberTek, led by founder {nameLink}, is your go-to web development partner, offering tailored solutions to help businesses thrive without the tech hassle. We take care of the daunting tasks from website creation and updates, domain registration, SEO, and UX design, to managing linking services and email systems.
+                caberTek, led by founder {nameLink}, is your go-to web development partner, offering tailored solutions to help businesses thrive without the tech hassle. We take care of the daunting tasks from website creation and updates, domain registration, SEO, and UX design, to managing linking services and email systems.
               </Text>
               <Text
                 as={motion.div}
