@@ -56,6 +56,7 @@ export const AboutSection = () => {
           direction={['column', 'column', 'column', 'column', 'row']}
         >
           <Container
+            my='auto'
             maxW={['auto', 'auto', 'auto', 'auto', "2xl"]}
           >
             <VStack
@@ -66,11 +67,11 @@ export const AboutSection = () => {
                 as={motion.div}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, transition: { duration: 1 } }}
-                mb={8}
+                mb={12}
                 textAlign={['center', 'center', 'left', 'left', 'left']}
-                fontSize={['sm', 'sm', 'sm', 'md', 'md']}
+                fontSize='md'
               >
-                Some would say caberTek is the leading web development company in the tech space today. That someone is me: {nameLink} - the creater of caberTek. I created this company because I want to help other business owners grow and scale their business without having to worry about many of the technical requirements of a modern business. A company&apos;s vision should not be hindered by a lack of familiarity with ever-evolving tools and services that are required to thrive in today&apos;s market.
+                CaberTek, led by founder {nameLink}, is your go-to web development partner, offering tailored solutions to help businesses thrive without the tech hassle. We take care of the daunting tasks from website creation and updates, domain registration, SEO, and UX design, to managing linking services and email systems.
               </Text>
               <Text
                 as={motion.div}
@@ -78,19 +79,9 @@ export const AboutSection = () => {
                 whileInView={{ opacity: 1, transition: { duration: 1.2 } }}
                 mb={8}
                 textAlign={['center', 'center', 'left', 'left', 'left']}
-                fontSize={['sm', 'sm', 'sm', 'md', 'md']}
+                fontSize='md'
               >
-                Between registering domains, creating a website, updating that website, linking services or products, setting up email systems, ensuring proper SEO, and providing a great user experience, it can be an overwhelming experience to manage that all yourself while also taking charge of every other aspect of your business. While there are solutions out there to ease that burden, they often have a learning curve that requires time that would be better spent on the bigger picture of the business. That&apos;s where caberTek comes in.
-              </Text>
-              <Text
-                mb={8}
-                fontSize={['sm', 'sm', 'sm', 'md', 'md']}
-                textAlign={['center', 'center', 'left', 'left', 'left']}
-                as={motion.div}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, transition: { duration: 1.4 } }}
-              >
-                With caberTek, you have a dedicated professional who handles all of that stuff for you. You also get a level of customization and service that pre-built solutions such as SquareSpace and Wordpress alone are unable to offer. With experience from rocket ship startups to fortune 100 companies and deep familiarity with today&apos;s modern tech-stacks and tools, caberTek is able to offer customized solutions for any business that is looking to offload their technical burden. From simple solutions to entire technical management, caberTek can help.
+                Our aim is to let business owners focus on their core vision without being overwhelmed by the evolving tech demands. With experience across a wide range of businesses, we provide a personalized service that generic platforms like SquareSpace and WordPress alone can&apos;t match, effectively alleviating your technical stress. Whether you need straightforward fixes or comprehensive technical management, caberTek is ready to assist.
               </Text>
             </VStack>
           </Container>
